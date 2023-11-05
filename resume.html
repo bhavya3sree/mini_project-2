@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Responsive Header</title>
+    <style>
+        body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.profile {
+    flex: 0 0 250px;
+    margin-right: 20px;
+}
+
+.profile-image {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.personal-details {
+    flex: 1;
+    font-size: larger;
+}
+
+.personal-details h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.address {
+    text-align: right;
+    font-style: italic;
+    margin-top: 20px;
+    font-size: larger;
+}
+
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .profile {
+        margin-bottom: 20px;
+    }
+
+    .profile-image {
+        width: 150px;
+        height: 150px;
+    }
+
+    .address {
+        text-align: left;
+    }
+}
+.slideshow-container {
+    max-width: 800px;
+    height: 400px;
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+
+.mySlides {
+    display: none;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+
+    </style>
+</head>
+<body>
+    <header class="header" style="background-color: gray;">
+        <div class="container">
+            <div class="header-content">
+                <div class="profile">
+                    <img src="th.jpeg" alt="Profile Image" class="profile-image">
+                </div>
+                <div class="personal-details">
+                    <h1>CATHERINE</h1>
+                    <p>Email: njcathe@gmail.com</p>
+                    <p>Domain: full stack development</p>
+                </div>
+                <div class="address">
+                    <h4>ADDRESS  :</h4>
+                   chennai,Anna nagar<br>
+                   123,road-8<br>
+                   villas appartment,TN
+                </div>
+            </div>
+        </div>
+    </header>
+    <div style="background-color: peachpuff">
+    <h1>Achivements</h1>
+    <div class="slideshow-container" >
+        <div class="mySlides fade">
+            <img src="m200.jpg" style="width:600px">
+        </div>
+        <div class="mySlides fade">
+            <img src="n200.jpg" style="width:600px">
+        </div>
+        <div class="mySlides fade">
+            <img src="v200.jpg" style="width:600px">
+        </div>
+        <div class="mySlides fade">
+            <img src="n300.jpg" style="width:600px">
+        </div>
+        <div class="mySlides fade">
+            <img src="th5.jpeg" style="width:600px">
+        </div>
+        <div class="mySlides fade">
+            <img src="th3.jpeg" style="width:600px">
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div  style="margin-left: 890px; margin-top: -335px;">
+        <p ><div style=" font-family: 'Roboto', sans-serif;
+            color: #353030;
+            font-size: 2em; "><B > Certificate of Achivement:</B></div>
+            <br><div style=" font-family: 'Arial', sans-serif;
+            line-height: 1.6;">
+            <ul>
+            <li>  certification of completion of course</li>
+            <li>  employe of the year in 2020</li>
+            <li>  project impression Certificate</li>
+            <li>  employe of the year 2022</li>
+            <li>  pet shop project impression</li>
+            <li>  SPRINGBOOT excellence certicate</li>
+            </ul>
+           </div></p>
+    </div>
+</div>
+<div>
+    <iframe src="borders.html" height="350px" width="100%"  frameBorder="0">
+        Alternative text for browsers that do not understand IFrames.
+    </iframe>
+</div>
+<div style="text-align: center;">
+    <h1>"Thank you for your consideration."</h1>
+
+</div>
+ 
+    <script src="slideshow.js"></script>
+   
+
+</body>
+</html>
